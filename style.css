@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para iconos */
+i {
+    font-size: 1.5rem;
+    transition: color 0.5s ease-out;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+i:hover {
+    color: #048E0A;
+}
+
+/* Margen generico para espacio entre apartados */
+.margen {
+    margin-top: 7rem;
+}
+
+.titulo {
+    color: #048E0A
+}
+
+.linea-titulo {
+    height: 2px;
+    width: 5rem;
+    margin: auto;
+    border-radius: 2px;
+    background-color: #048E0A;
+}
+
+/* Estilos para links de menu de navegacion */
+.text-link-mobile {
+    color: #048E0A;
+}
+
+.text-link {
+    display: inline;
+    transition: all 0.5s ease-out;
+}
+
+.text-link:hover {
+    color: #048E0A;
+    text-decoration: underline;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+/* Estilos para boton responsive de menu de navegacion */
+.bi-list {
+    font-size: 2rem;
+    padding: 0 .2rem;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.5s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.rotar {
+    transform: rotate(180deg);
+}
+
+/* Estilo que corrige el tamaño del boton de tema */
+.switch {
+    transform: scale(0.7);
+}
+
+/* Estilos para controlar la visibilidad de los menus para desktop y mobile */
+.hidden {
+    display: none;
+}
+
+.nav-mobile {
+    position: absolute;
+    z-index: 1000;
+    padding: 1rem;
+    width: 100%;
+    background: #212529;
+}
+
+.nav-mobile-hidden {
+    display: none;
+    transition: all 0.5s ease-out;
+}
+
+/* Estilos para contenedor con margen fijo */
+.contenedor {
+    width: 80vw;
+    margin: auto;
+}
+
+/* Estilos para el cabecero */
+.cabecero-titulo {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.line-color {
+    flex-direction: column;
+}
+
+.cabecero-web {
+    color: #048E0A;
+}
+
+/* Estilos para apartado de tecnologia */
+.tecnologia img {
+    width: 3.8rem;
+    margin: 1.4rem;
+}
+
+/* Estilo exclusivo para botones del segundo cabecero */
+.header2 button {
+    width: 10rem;
+    margin: 1rem;
+}
+
+/* Estilos para botones */
+.button{
+    padding: .6rem;
+    color: #048E0A;
+    border-radius: 10px;
+    background-color: unset;
+    border: solid 2px #048E0A;
+}
+
+.button:hover {
+    color: initial;
+    background-color: #048E0A;
+}
+
+/* Media querys */
+/* Se efectua cuando la pantalla es menor a 720px  (tamaño movil)*/
+@media (max-width: 720px) {
+    .hidden {
+        display: block;
+    }
+
+    .nav-hidden {
+        display: none;
+    }
+}
+
+/* Se efectua cuando la pantalla es menor a 768px (tamaño tablet)*/
+@media (max-width: 768px) {
+    .cabecero-titulo {        
+        border-top: 3px solid #048E0A;
+    }
+}
+
+/* Se efectua cuando la pantalla es mayor a 768px (tamaño tablet)*/
+@media (min-width: 768px) {
+    .line-color {
+        height: 6rem;
+        border-right: 3px solid #048E0A;
+    }
+}
+
+/* Se efectua cuando la pantalla es mayor a 720px (tamaño escritorio)*/
+@media (min-width: 720px) {
+    .mobile-hidden {
+        display: none;
+    }
+
+    .cabecero-titulo {
+        border-top: none;
+    }
+}
+
+
+
+.test {
+    background-color: lightblue;
+}
